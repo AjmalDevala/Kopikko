@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.box1{
+    background-color: black;
+    width: 100%;
+    height:200px;
+    margin-top: -40px;
+}
+.small-box1{
+    font-size:50px;
+    letter-spacing: 0.1em;
+    color: #999999;
+    width:100%;
+    height: 50px;
+    padding-top: 70px;
+  
+
+}
+.small-box1 :hover{
+    cursor: pointer;
+    color: red;
+
+}
+.small-box2{
+    letter-spacing: 0.2em;
+    padding-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    color: #999999;
+    width:100%;
+    height: 50px;
+   
+}
+.box2{
+    background-color:black;
+    width: 100%;
+    height: 40px;
+    padding-top: 3;
+    display:flex;
+    word-spacing: 10px;
+ 
+}
+
+.box2 ul{
+    margin-left: 400px;
+
+}
+
+.box2 ul li{
+    display: inline;
+    padding-left: 15px;
+
+}
+
+.box2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.box3{
+    background-image: url(images/asset\ 0.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 870px;
+ 
+}
+.box4{
+    background-color:black;
+    width: 100%;
+    height: 200px;
+
+}
+.box4 p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    margin-left: 200px;
+    text-align: center;
+    color: #999999;
+    margin-right: 250px;
+    padding-top: 120px;
+
+}
+.box5{
+    background-color:black;
+    width:100%;
+    height: 80px;
+
+}
+.box5 p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    margin-left: 200px;
+    text-align: center;
+    color: #999999;
+    margin-right: 250px;
+
+}
+.box6{
+    background-color:black;
+    width:100%;
+    height:600px ;
+
+}
+.box7{
+
+    background-image: url(images/asset\ 1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 56%;
+    height: 600px;
+    padding-right: 600px;
+    padding-top: 20px;
+    
+}
+.box8{
+    background-color:black;
+    width:100%;
+    height:100px ;
+}
+.box9{
+    background-color:black;
+    width:100%;
+    height:100px ;
+}
+.box10 img{
+    width: 36px;
+    height: 32px;
+    padding: 8px 3px 0px 61px;
+}
+
+
+.box10{
+    margin: -10px 0px 0px 450px;
+    height: 200px;
+}
+
+.footer{
+    display: flex;
+    margin: -2px 3px 0px 511px;
+
+}
+
+.foot ul li{
+    font-size: 11px;
+    display: inline-block;
+    color: rgb(151, 133, 133);
+    padding: 7px 7px 0px 0px;
+}
+.foot ul li a{
+    color: white;
+    text-decoration: none;
+}
+.tin :hover{
+    cursor: pointer;
+    color: #f5808c;
+}
