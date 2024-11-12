@@ -1,162 +1,212 @@
-*{
+* {
     margin: 0;
     padding: 0;
     background-color: black;
+    box-sizing: border-box;
 }
-.box1{
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.box1 {
     background-color: black;
     width: 100%;
-    height:200px;
+    height: 200px;
     margin-top: -40px;
+    text-align: center;
 }
-.small-box1{
-    font-size:50px;
+
+.small-box1 {
+    font-size: 50px;
     letter-spacing: 0.1em;
     color: #999999;
-    width:100%;
-    height: 50px;
     padding-top: 70px;
-  
-
 }
-.small-box1 :hover{
-    cursor: pointer;
-    color: red;
 
-}
-.small-box2{
+.small-box2 {
     letter-spacing: 0.2em;
     padding-top: 10px;
-    font-family: "Open Sans", sans-serif;
     color: #999999;
-    width:100%;
-    height: 50px;
-   
+    font-size: 18px;
 }
-.box2{
-    background-color:black;
+
+hr {
+    margin-top: 20px;
+    border: 1px solid #999999;
+}
+
+.box2 {
+    background-color: black;
     width: 100%;
     height: 40px;
-    padding-top: 3;
-    display:flex;
-    word-spacing: 10px;
- 
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.box2 ul{
-    margin-left: 400px;
-
+.box2 ul {
+    display: flex;
+    gap: 15px;
 }
 
-.box2 ul li{
-    display: inline;
-    padding-left: 15px;
-
-}
-
-.box2 ul li a{
+.box2 ul li a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
 }
 
-.box3{
+.box3 {
     background-image: url(images/asset\ 0.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 870px;
- 
 }
-.box4{
-    background-color:black;
+
+.box4, .box5 {
+    background-color: black;
+    color: #999999;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.box4 p, .box5 p {
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.box6 {
+    background-color: black;
     width: 100%;
-    height: 200px;
-
+    height: 600px;
 }
-.box4 p{
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size:20px;
-    margin-left: 200px;
-    text-align: center;
-    color: #999999;
-    margin-right: 250px;
-    padding-top: 120px;
 
-}
-.box5{
-    background-color:black;
-    width:100%;
-    height: 80px;
-
-}
-.box5 p{
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size:20px;
-    margin-left: 200px;
-    text-align: center;
-    color: #999999;
-    margin-right: 250px;
-
-}
-.box6{
-    background-color:black;
-    width:100%;
-    height:600px ;
-
-}
-.box7{
-
+.box7 {
     background-image: url(images/asset\ 1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     width: 56%;
     height: 600px;
-    padding-right: 600px;
-    padding-top: 20px;
-    
+    margin: 0 auto;
 }
-.box8{
-    background-color:black;
-    width:100%;
-    height:100px ;
+
+.box10 {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
-.box9{
-    background-color:black;
-    width:100%;
-    height:100px ;
-}
-.box10 img{
+
+.box10 img {
     width: 36px;
     height: 32px;
-    padding: 8px 3px 0px 61px;
+    margin: 10px;
 }
 
-
-.box10{
-    margin: -10px 0px 0px 450px;
-    height: 200px;
-}
-
-.footer{
+.footer {
     display: flex;
-    margin: -2px 3px 0px 511px;
-
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.foot ul li{
-    font-size: 11px;
-    display: inline-block;
+.foot ul {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
     color: rgb(151, 133, 133);
+}
+
+.foot ul li {
+    display: inline-block;
     padding: 7px 7px 0px 0px;
 }
-.foot ul li a{
+
+.foot ul li a {
     color: white;
     text-decoration: none;
 }
-.tin :hover{
+
+.tin:hover {
     cursor: pointer;
     color: #f5808c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .small-box1 {
+        font-size: 30px;
+    }
+
+    .small-box2 {
+        font-size: 14px;
+    }
+
+    .box2 ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box4 p, .box5 p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .box3 {
+        height: 400px;
+    }
+
+    .box7 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .box10 img {
+        width: 30px;
+        height: 28px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foot ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .small-box1 {
+        font-size: 25px;
+    }
+
+    .small-box2 {
+        font-size: 12px;
+    }
+
+    .box4 p, .box5 p {
+        font-size: 16px;
+    }
+
+    .box3 {
+        height: 300px;
+    }
+
+    .box7 {
+        width: 100%;
+        height: 300px;
+    }
+
+    .box10 img {
+        width: 28px;
+        height: 25px;
+    }
+
+    .footer ul {
+        font-size: 10px;
+    }
 }
